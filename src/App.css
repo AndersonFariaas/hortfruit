@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 115, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Titulo*/
+
+.app{
+    display: flex;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.titulo-box{
+    text-align: center;
+    margin-left: 10%;
+}
+h1{
+    font-size: 80px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+h2{
+    font-size: 2em;
+    font-family: sans-serif;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Cards */
+
+.titulo-cards{
+    font-size: 3em;
+    margin: 1%;
+    margin-left: 10%;
+    color: white;
+}
+.cards-box {
+    margin-left: 10%;
+    width: 694px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.produto {
+    width: 100%; 
+}
+img{
+  margin: -84px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* Carrinho */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Carrinho{
+    width: 400px;
+    height: 550px;
+    background-color: #F7E0CE;
+    position:absolute;
+    left: 60%;
+    top: 15%;
+    border-radius: 110px;
+}
+.Carrinho-centro{
+    width: 300px;
+    height: 420px;
+    background-color:#D3C5BB;
+    position: relative;
+    left: 52px;
+    top: 50px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 200px 20px;
+}
+.Botoes-carrinho{
+    position: absolute;
+    left: 131px;
+    bottom: 30px;
+    background-color: white;
+    width: 140px;
+    height: 30px;
+    border-radius: 40px
+}
+button{
+    margin-left: 25px;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 25px;
+    background-color: white;
 }
